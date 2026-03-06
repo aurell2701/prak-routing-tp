@@ -21,13 +21,13 @@ const server = http.createServer((req, res) => {
   // GET /
   if (url === '/' && method === 'GET') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('<h1>🏠 Halaman Utama</h1><p>Selamat datang di server Node.js + TypeScript!</p>');
+    res.end('<h1> Halaman Utama</h1><p>Selamat datang di server Node.js + TypeScript!</p>');
   }
 
   // GET /about
   else if (url === '/about' && method === 'GET') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('<h1>📄 Tentang Kami</h1><p>Ini adalah contoh routing manual sederhana.</p>');
+    res.end('<h1> Tentang Kami</h1><p>Ini adalah contoh routing manual sederhana.</p>');
   }
 
   // GET /api/users
@@ -93,7 +93,7 @@ const server = http.createServer((req, res) => {
 
   else {
     res.writeHead(404, { 'Content-Type': 'text/html' });
-    res.end('<h1>❌ 404 - Halaman Tidak Ditemukan</h1>');
+    res.end('<h1> 404 - Halaman Tidak Ditemukan</h1>');
   }
 
   // Middleware waktu selesai
